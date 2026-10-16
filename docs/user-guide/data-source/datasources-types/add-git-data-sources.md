@@ -276,7 +276,7 @@ If **every** file in scope gets skipped or fails, the whole data source fails to
 ### Things to Know Before Using Git FAQ
 
 - **Processing mode can't be changed after creation.** A Git data source created with Default processing can't later be switched to FAQ, or the other way around — a new data source is needed.
-- **Every reindex is a full reindex.** There is no partial or "resume" update — each time the data source is reindexed, all files are read again from scratch.
+- **Incremental reindex is supported.** Only changed FAQ articles are re-read, based on the last indexed commit. Without a stored commit, the index is rebuilt in full.
 - **No file size limit.** Unlike the File data source (capped at 100 MB per file), a Git FAQ file of any size is read fully into memory, so extremely large Markdown files can slow things down.
 - **Changing the source requires a full reindex.** Editing the Repository Link, Branch, Files Filter, or Git integration on an existing Git FAQ data source is only allowed together with a full reindex — a plain save without it is rejected. Changing just the name, description, or sharing settings does not require this.
 - **The repository is checked before indexing starts.** When creating or updating a Git FAQ data source with a new Repository Link, CodeMie first confirms the repository can be reached. For a repository with no Git integration selected, it must be publicly accessible, or the setup fails immediately with an error.
@@ -339,6 +339,10 @@ Now your Git repository is configured as a data source and ready to enhance your
 - Check repository visibility settings (public/private)
 - Update integration credentials
 - Request access from repository owner
+
+## Incremental Reindex
+
+This data source supports **Incremental Index**, which processes only content added, changed or removed since the last successful run. See [Indexing Data Sources](../data-source-overview/indexing-data-sources.md) for details and limitations.
 
 ## Using Git Data Source in Assistants
 

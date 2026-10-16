@@ -104,6 +104,10 @@ The indexing run distinguishes between two outcomes for individual pages:
 - **Failures** — a page raises an error during loading. Each failure consumes the failure budget. The run is aborted immediately if every page walked so far has failed, and is otherwise marked as failed when failures exceed the greater of **5 pages or 10 % of the pages in the space**.
 - **Skipped pages** — a page loads successfully but has no indexable content (empty body). Skipped pages do not count against the failure budget and do not affect run status.
 
+## Incremental Reindex
+
+This data source supports **Incremental Index**, which processes only content added, changed or removed since the last successful run. See [Indexing Data Sources](../data-source-overview/indexing-data-sources.md) for details and limitations.
+
 ## Using the xWiki Data Source in Assistants
 
 After creating and indexing the data source, connect it to an assistant to enable wiki search.

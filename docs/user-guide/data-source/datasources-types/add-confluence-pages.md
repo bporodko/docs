@@ -170,6 +170,10 @@ Click the **+ Create** button and wait for the process to finish.
 - Ensure personal access token has appropriate scopes
 - Request access from Confluence space administrator
 
+## Incremental Reindex
+
+This data source supports **Incremental Index**, which processes only content added, changed or removed since the last successful run. See [Indexing Data Sources](../data-source-overview/indexing-data-sources.md) for details and limitations.
+
 ## Using Confluence Data Source in Assistants
 
 After successfully creating and indexing your Confluence data source, you can connect it to any assistant to provide access to your documentation.

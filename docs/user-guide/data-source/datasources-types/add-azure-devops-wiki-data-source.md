@@ -110,6 +110,10 @@ Files attached to wiki pages are downloaded, text is extracted, and indexed. Sup
 Image OCR and image-embedded document processing require a multimodal AI model to be configured in your CodeMie instance. If no multimodal model is available, image attachments are skipped.
 :::
 
+## Incremental Reindex
+
+This data source supports **Incremental Index**, which processes only content added, changed or removed since the last successful run. See [Indexing Data Sources](../data-source-overview/indexing-data-sources.md) for details and limitations.
+
 ## Using the Azure DevOps Wiki Data Source in Assistants
 
 After creating and indexing the data source, connect it to an assistant to enable wiki search.

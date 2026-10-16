@@ -109,6 +109,10 @@ Image OCR and image-embedded document processing require a multimodal AI model t
 Attachment types not listed above are handled gracefully — the indexing job records metadata only and continues without failing.
 :::
 
+## Incremental Reindex
+
+This data source supports **Incremental Index**, which processes only content added, changed or removed since the last successful run. See [Indexing Data Sources](../data-source-overview/indexing-data-sources.md) for details and limitations.
+
 ## Using the Azure DevOps Work Items Data Source in Assistants
 
 After creating and indexing the data source, connect it to an assistant to enable work item search.

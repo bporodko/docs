@@ -191,6 +191,10 @@ project = "WEB" AND issuetype = "Test"
 - `IS NOT EMPTY` : field has a value
   :::
 
+## Incremental Reindex
+
+This data source supports **Incremental Index**, which processes only content added, changed or removed since the last successful run. See [Indexing Data Sources](../data-source-overview/indexing-data-sources.md) for details and limitations.
+
 ## Using X-ray Data Source in Assistants
 
 After successfully creating and indexing your X-ray data source, you can connect it to any assistant to provide access to test case information.

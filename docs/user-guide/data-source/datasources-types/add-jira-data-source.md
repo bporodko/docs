@@ -191,6 +191,10 @@ project = projectKey AND status = "In Progress"
 - Ensure API token has appropriate scopes
 - Request access from Jira project administrator
 
+## Incremental Reindex
+
+This data source supports **Incremental Index**, which processes only content added, changed or removed since the last successful run. See [Indexing Data Sources](../data-source-overview/indexing-data-sources.md) for details and limitations.
+
 ## Using Jira Data Source in Assistants
 
 After successfully creating and indexing your Jira data source, you can connect it to any assistant to provide access to project and issue information.

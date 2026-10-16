@@ -9,7 +9,7 @@ To manage your indexed Data Sources:
 ## Available actions:
 
 - Delete - Completely remove the Data Source and all associated data. Use this if the data is no longer relevant or to free up space.
-- Incremental Index - Update only changed or modified data since the last indexing. Saves time and resources. _(Currently works only with Jira)_
+- Incremental Index - Update only changed or modified data since the last indexing. Saves time and resources.
 - Full Reindex - Completely scan and update all data, regardless of changes. Useful for significant data structure changes or fixing indexing errors.
 - View - Preview the Data Source contents without modifying anything.
 - Edit - Modify integrations, indexing parameters, or content settings.

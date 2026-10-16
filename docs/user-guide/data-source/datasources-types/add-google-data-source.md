@@ -122,6 +122,10 @@ Follow these detailed steps to add a Google Document as a data source:
 
 5. Click **+ Create** to create the data source
 
+## Incremental Reindex
+
+This data source supports **Incremental Index**, which processes only content added, changed or removed since the last successful run. See [Indexing Data Sources](../data-source-overview/indexing-data-sources.md) for details and limitations.
+
 ## Using Google Data Source in Assistants
 
 After successfully creating and indexing your Google data source, you can connect it to any assistant to provide access to your Google Docs content.
