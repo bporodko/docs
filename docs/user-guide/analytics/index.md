@@ -126,6 +126,8 @@ The **LLM Usage** section of the Insights tab shows three donut charts side by s
 a **Top N** selector (**Top 10**, **Top 20** or **All**) and an expand icon that opens the chart in
 a larger view.
 
+![LLM Usage charts: Top LLMs, Top CLI LLMs and Expenses by Model](./images/llm-usage-charts.png)
+
 | Chart                 | What it shows                                             | Value       |
 | --------------------- | --------------------------------------------------------- | ----------- |
 | **Top LLMs**          | Models ranked by number of requests                       | Requests    |
