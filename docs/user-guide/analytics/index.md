@@ -126,17 +126,17 @@ The **LLM Usage** section of the Insights tab shows three donut charts side by s
 a **Top N** selector (**Top 10**, **Top 20** or **All**) and an expand icon that opens the chart in
 a larger view.
 
-![LLM Usage charts: Top LLMs, Top CLI LLMs and Expenses by Model](./images/llm-usage-charts.png)
+![LLM Usage charts: Top LLMs, Top CLI LLMs and Top LLMs by Cost](./images/llm-usage-charts.png)
 
-| Chart                 | What it shows                                             | Value       |
-| --------------------- | --------------------------------------------------------- | ----------- |
-| **Top LLMs**          | Models ranked by number of requests                       | Requests    |
-| **Top CLI LLMs**      | Models used through the CLI, ranked by number of requests | Requests    |
-| **Expenses by Model** | Total cost of each model and its share of the total spend | Cost in USD |
+| Chart                | What it shows                                             | Value       |
+| -------------------- | --------------------------------------------------------- | ----------- |
+| **Top LLMs**         | Models ranked by number of requests                       | Requests    |
+| **Top CLI LLMs**     | Models used through the CLI, ranked by number of requests | Requests    |
+| **Top LLMs by Cost** | Total cost of each model and its share of the total spend | Cost in USD |
 
-### Expenses by Model
+### Top LLMs by Cost
 
-**Expenses by Model** answers the question _which models cost the most_. Each slice is the total
+**Top LLMs by Cost** answers the question _which models cost the most_. Each slice is the total
 cost of one model for the selected period, and the legend lists the exact amount in US dollars.
 
 - **Filters**: the chart follows the [global filters](#global-filtering-system) — time period,
